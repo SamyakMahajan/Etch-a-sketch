@@ -3,7 +3,7 @@ let erase=false
 document.addEventListener('DOMContentLoaded', () => {
     const gridCells = document.querySelectorAll('.grid_cell');
     let mousedown = false;
-    let chosenColor = "#5C08A0"; // Default color
+    let chosenColor = "#08af08"; // Default color
 
     const body = document.body;
     colorPicker.addEventListener('input', () => {

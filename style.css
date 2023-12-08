@@ -98,7 +98,7 @@ body {
 .grid_cell {
     /* Add your default styles for grid cells here */
     /* border: 1px solid #000; */
-    background: #fff;
+    background: #ddd;
     padding: 10px;
     display: flex;
     align-items: center;
