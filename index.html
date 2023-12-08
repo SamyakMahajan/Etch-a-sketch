@@ -1,0 +1,298 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch!</title>
+</head>
+<body>
+
+    <!-- <div class="chooseColor">Choose Color</div> -->
+    <h1 >Etch-A-Sketch</h1>
+    <div class="functionality">
+        <div class="color-chosers">
+            <div class="color-picker-container">
+                <label for="colorPicker">Choose a color:</label><br>
+                <input style="margin-top:20px;"type="color" id="colorPicker" value="#5C08A0">
+                <!-- <div id="selectedColor" class="selected-color"></div> -->
+            </div>
+
+            <div class="Erasor-container">
+                
+                <button id="Erasor" onclick="toggleClickedState()">Eraser</button>
+            
+                <!-- <div id="selectedColor" class="selected-color"></div> -->
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        <div class="grid_cell"></div>
+        </div>
+
+</div >
+
+    <!-- <script> -->
+        <!-- // Function to toggle the clicked state
+     -->
+    <!-- </script> -->
+</body>
+</html>
